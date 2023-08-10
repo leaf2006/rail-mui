@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-12-M/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-12-M/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-12-M/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.css" integrity="sha256-gEYuPiCt4z3aRsQm0F4X5YBtK8t/Ny7v+Q9GwjLuJS0=" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="telecode.css"> -->
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header>
+        <!-- <div class="container jumbotron1"> -->
+            <div class="row1"><div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <h2>铁路信息查询</h2>
+                <div class="search-wraper1" role="search">
+                <div class="form-group1">
+                    <input class="form-control search clearable1" placeholder="动车组车次 / 车站名 / 车站代码" autocomplete="off"><i class="fa fa-search"></i>
+                </div>
+                </div>
+            </div></div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="row"><div class="col-xs-12 col-md-8 col-md-offset-2 table-responsive">
+            <table id="station-list" class="table table-hover component">
+                <thead><tr>
+                    <th><!-- 办理限制 --></th>
+                    <th>站名</th>
+                    <th>路局</th>
+                    <th>省<span class="hidden-xs hidden-sm">级行政区划</span></th>
+                    <th>电报<span class="hidden-xs">略码</span></th>
+                    <th>拼音<span class="hidden-xs">码</th>
+                    <th>TMIS</th>
+                </tr></thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div></div>
+    </main>
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.tablesorter.min.js"></script>
+    <script src="./js/geopattern.min.js"></script>
+
+    <script src="./js/station.js"></script>
+    <script src="./js/polyfill.js"></script>
+    <script src="./js/bureau.js"></script>
+    <!-- <script src="version.js"></script> -->
+    <script src="./js/telecode.js"></script>
+</body>
+</html>
